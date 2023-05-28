@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input, select, textarea{
+            outline: none;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Event Registration</h1>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="fullName"><br><br>
+        <label for="email">Email ID:</label><br>
+        <input type="email" id="email" name="mailId"><br><br>
+        <label for="phno">Phone NO:</label><br>
+        <input type="number" id="phno" name="phoneNo"><br><br>
+        <label for="Occupation">Occupation:</label><br>
+        <select name="Occupation" id="Occupation">
+            <option value="student">Student</option>
+            <option value="front-end developer">Front-End Developer</option>
+            <option value="teacher">Teacher</option>
+        </select><br><br>
+        <label for="#">Topics of Interest</label><br>
+        <input type="checkbox" name="topics" id="html" value="html"><br>
+        <label for="html">HTML</label><br><br>
+        <input type="checkbox" name="topics" id="css" value="css"><br>
+        <label for="css">CSS</label><br><br>
+        <input type="checkbox" name="topics" id="Javascript" value="javascript"><br>
+        <label for="Javascript">Javascript</label><br><br>
+        <label for="comment">Comment:</label><br>
+        <textarea name="comment" id="comment" style= "height: 100px; width: 350px;"></textarea><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
