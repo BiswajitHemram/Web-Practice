@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Job Application</h1>
+        <label for="name">Name:</label><br>
+        <input type="text" name="fullName" id="name"><br><br>
+        <label for="emailId">Email:</label><br>
+        <input type="email" name="email" id="emailId"><br><br>
+        <label for="phone">Phone No:</label><br>
+        <input type="tel" name="phoneNumber" id="phone" pattern="[0-9]{10}"><br><br>
+        <label for="upload">Resume:</label><br>
+        <input type="file" name="resume" id="upload" accept=".doc, .docx, .pdf"><br><br>
+        <label for="experienceNo">Experience(in years):</label><br>
+        <input type="number" name="years" id="experienceNo" style="width: 50px;"><br><br>
+        <fieldset>
+            <legend>Skills:</legend>
+            <input type="checkbox" name="skills" id="html" value="html"><br>
+            <label for="html">HTML</label><br><br>
+            <input type="checkbox" name="skills" id="css" value="css"><br>
+            <label for="css">CSS</label><br><br>
+            <input type="checkbox" name="skills" id="javascript" value="javascript"><br>
+            <label for="javascript">Javascript</label><br><br>
+        </fieldset><br><br>
+        <label for="education">Education:</label><br>
+        <select name="education" id="education">
+            <option value="hight school">High School</option>
+            <option value="under grad">Under Grad</option>
+            <option value="master's">Master's</option>
+        </select><br><br>
+        <span>Availability:</span><br><br>
+        <input type="radio" name="Availability" id="part" value="part-time"><br>
+        <label for="part">Part-time</label><br><br>
+        <input type="radio" name="Availability" id="full" value="full-time"><br>
+        <label for="full">Full-time</label><br><br>
+        <label for="comment">Additional comments:</label><br>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
